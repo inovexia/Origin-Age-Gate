@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Paching Pigeon</title>
+    <title>Origin Age Gate</title>
     <link rel="shortcut icon" href="#" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/custom.css" />
@@ -16,26 +16,6 @@
                 <a class="navbar-brand" href="#">
                     <img src="img/logo.png" alt="Packing Pigeon" />
                 </a>
-                <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <!-- <span class="navbar-toggler-icon"></span> -->
-                  <img src="img/menu.png" alt="" />
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Labels</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Pouches</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Boxed</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Tape</a>
-                      </li>
-                  </ul>
-                </div>
               </nav>
         </div>
         
@@ -44,32 +24,48 @@
 
     <!-- Main Start -->
     <main>
-        <section class="banner-section">
-            <div class="container-fluid">
-                <div class="row mx-0 no-gutters">
-                    <div class="col col-12 col-md-6">
-                        <div class="left-part">
-                            <div class="coming-soon">
-                            <span>Coming Soon</span>
+        <section class="banner-slider">
+            <div class="slider-list-outer">
+              <div id="slider1" class="slider-list">
+                <img src="img/banner-bg3.jpg" alt="Slider 1" class="img-fluid d-none d-md-block" />
+                <img src="img/768-bg.jpg" alt="Slider 1" class="img-fluid d-block d-md-none" />
+                <div class="slider-content">
+                  <div class="container-fluid">
+                    <div class="row mx-0 no-gutters">
+                      <div class="col col-12 col-md-6">
+
+                      </div>
+                      <div class="col col-12 col-md-6">
+                          <div class="right-part">
+                            <div class="title">
+                              <h2 class="t1">Are you</h2>
+                              <h2 class="t2 text-right">Over 19?</h2>
                             </div>
-                            
-                            <h1>Get Notified When we Launch</h1>
-                            <div class="notify-me">
-                                <form method="">
-                                    <input class="email-input" type="email" name="email" placeholder="Enter your email address" /> 
-                                <input class="notify-btn" type="button" name="notify"  value="Notify Me"/>
-                                </form>
-                                
+                            <div class="desc">
+                              You must verify that you are 19 years of age or older to enter this site.
                             </div>
-                            <p>*Don’t worry we will not spam you</p>
-                        </div>
+                            <div class="radio-toolbar row mx-0 no-gutters">
+                              <div class="radio-btns first col-12 col-md-6">
+                                <input type="radio" id="ninteenplus" name="age" value="Yes, I'm 19+" checked>
+                                <label for="ninteenplus">Yes, I'm 19+ <p><span></span></p></label>
+                              </div>
+                              
+                              <div class="radio-btns second col-12 col-md-6">
+                                <input type="radio" id="ninteenbelow" name="age" value="No, I'm not 19+ ">
+                                <label for="ninteenbelow">No, I'm not 19+   <p><span></span></p></label>
+                              </div>
+                            </div>
+                            <hr/>
+                            <div class="remember">
+                              <p><span></span></p> Remember my answer for 30 days.
+                            </div>
+                          </div>
+                      </div>
                     </div>
-                    <div class="col col-12 col-md-6 text-center text-md-right">
-                        <div class="right-part">
-                            <img src="img/cartoon.png" alt="" />
-                        </div>
-                    </div>
+                   
+                  </div>
                 </div>
+              </div>
             </div>
         </section>
     </main>
