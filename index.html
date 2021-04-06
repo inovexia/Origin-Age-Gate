@@ -6,6 +6,8 @@
     <title>Origin Age Gate</title>
     <link rel="shortcut icon" href="#" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/jquery.parallax.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/custom.css" />
   </head>
   <body>
@@ -25,21 +27,18 @@
     <!-- Main Start -->
     <main>
         <section class="banner-slider">
-            <div class="slider-list-outer">
-              <div id="slider1" class="slider-list">
+            <div class=" swiper-wrapper">
+              <div id="slider1" class="slider-list slider-light swiper-slide">
                 <img src="img/banner-bg3.jpg" alt="Slider 1" class="img-fluid d-none d-md-block" />
                 <img src="img/768-bg.jpg" alt="Slider 1" class="img-fluid d-block d-md-none" />
                 <div class="slider-content">
                   <div class="container-fluid">
                     <div class="row mx-0 no-gutters">
-                      <div class="col col-12 col-md-6">
-
-                      </div>
-                      <div class="col col-12 col-md-6">
+                      <div class="col col-12 col-md-6 offset-md-6">
                           <div class="right-part">
                             <div class="title">
-                              <h2 class="t1">Are you</h2>
-                              <h2 class="t2 text-right">Over 19?</h2>
+                              <h2 class="t1" data-rate="0.4" data-effect="flip-x">Are you</h2>
+                              <h2 class="t2 text-right" data-rate="0.4" data-effect="flip-x">Over 19?</h2>
                             </div>
                             <div class="desc">
                               You must verify that you are 19 years of age or older to enter this site.
@@ -66,6 +65,80 @@
                   </div>
                 </div>
               </div>
+              <div id="slider2" class="slider-list slider-dark swiper-slide">
+                <img src="img/banner-bg2.jpg" alt="Slider 1" class="img-fluid d-none d-md-block" />
+                <img src="img/768-bg2.jpg" alt="Slider 1" class="img-fluid d-block d-md-none" />
+                <div class="slider-content">
+                  <div class="container-fluid">
+                    <div class="row mx-0 no-gutters">
+                      <div class="col col-12 offset-md-6 col-md-6">
+                          <div class="right-part">
+                            <div class="title">
+                              <h2 class="t1">Are you</h2>
+                              <h2 class="t2 text-right">Over 19?</h2>
+                            </div>
+                            <div class="desc">
+                              You must verify that you are 19 years of age or older to enter this site.
+                            </div>
+                            <div class="radio-toolbar row mx-0 no-gutters">
+                              <div class="radio-btns first col-12 col-md-6">
+                                <input type="radio" id="ninteenplus2" name="age2" value="Yes, I'm 19+" checked>
+                                <label for="ninteenplus2">Yes, I'm 19+ <p><span></span></p></label>
+                              </div>
+                              
+                              <div class="radio-btns second col-12 col-md-6">
+                                <input type="radio" id="ninteenbelow2" name="age2" value="No, I'm not 19+ ">
+                                <label for="ninteenbelow2">No, I'm not 19+   <p><span></span></p></label>
+                              </div>
+                            </div>
+                            <hr/>
+                            <div class="remember">
+                              <p><span></span></p> Remember my answer for 30 days.
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+              <div id="slider3" class="slider-list slider-dark swiper-slide">
+                <img src="img/banner-bg1.jpg" alt="Slider 1" class="img-fluid d-none d-md-block" />
+                <img src="img/768-bg3.jpg" alt="Slider 1" class="img-fluid d-block d-md-none" />
+                <div class="slider-content">
+                  <div class="container-fluid">
+                    <div class="row mx-0 no-gutters">
+                      <div class="col col-12 offset-md-6 col-md-6">
+                          <div class="right-part">
+                            <div class="title">
+                              <h2 class="t1">Are you</h2>
+                              <h2 class="t2 text-right">Over 19?</h2>
+                            </div>
+                            <div class="desc">
+                              You must verify that you are 19 years of age or older to enter this site.
+                            </div>
+                            <div class="radio-toolbar row mx-0 no-gutters">
+                              <div class="radio-btns first col-12 col-md-6">
+                                <input type="radio" id="ninteenplus3" name="age3" value="Yes, I'm 19+" checked>
+                                <label for="ninteenplus3">Yes, I'm 19+ <p><span></span></p></label>
+                              </div>
+                              
+                              <div class="radio-btns second col-12 col-md-6">
+                                <input type="radio" id="ninteenbelow3" name="age3" value="No, I'm not 19+ ">
+                                <label for="ninteenbelow3">No, I'm not 19+   <p><span></span></p></label>
+                              </div>
+                            </div>
+                            <hr/>
+                            <div class="remember">
+                              <p><span></span></p> Remember my answer for 30 days.
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
             </div>
         </section>
     </main>
@@ -76,6 +149,8 @@
     <!-- Footer end -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.parallax.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/custom.js"></script>
   </body>
 </html>

@@ -14,6 +14,11 @@ body{
 }
 
 @media (min-width: 0px) {
+    .banner-slider {
+        max-width: 1920px;
+        margin: 0px auto;
+        overflow-x: hidden;
+    }
     #header{
         position: relative;
     }
@@ -32,7 +37,7 @@ body{
 
     }
     #header .navbar {
-        padding-top: 25px;
+        padding-top:0px;
     }
     .slider-list-outer{
         width:100%;
@@ -45,9 +50,11 @@ body{
         height: 100%;
         left: 0;
         position: absolute;
-        top: 50%;
+        top:0;
         width: 100%;
-        transform: translate(0%,-30%);
+        justify-content: center;
+        align-items: center;
+        
     }
     main .slider-content .content-area {
         display: flex;
@@ -57,27 +64,37 @@ body{
     .slider-list{
         position:relative;
     }
+    /* slider 1 */
     .title {
         width: 100%;
         max-width: 400px;
     }
     .title h2 {
-        font-size: 60px;
+        font-size: 40px;
         color: #1f4c61;
         margin: 0;
     }
+    
     .desc {
         color: #1f4c61;
         font-family: "G-Book";
-        font-size: 20px;
+        font-size:15px;
         max-width: 400px;
         padding: 20px 0px;
+    }
+    .right-part {
+        max-width: 475px;
+        text-align: left;
+        margin: 0 0 0 auto;
+    }
+    .radio-btns.second{
+        margin-right:0;
     }
     .right-part hr {
         height: 3px;
         width: 100px;
         background-color: #1f4c61;
-        margin: 30px 0px;
+        margin:10px 0px;
     }
 
     .radio-toolbar {
@@ -95,7 +112,7 @@ body{
           background-color: #f1cf6b;
           padding: 10px 20px;
           font-family:"G-Book";
-          font-size: 16px;
+          font-size: 14px;
           border: 1px solid #1f4c61;
           border-radius:50px;
           color:#1f4c61;
@@ -108,7 +125,7 @@ body{
           border-color: #1f4c61;
           color: #f1cf6b;
       }
-      .radio-toolbar input[type="radio"]:checked + label p{
+     .radio-toolbar input[type="radio"]:checked + label p{
         border-color: #f1cf6b;
         color: #f1cf6b;
         margin: 0;
@@ -116,12 +133,12 @@ body{
     .radio-toolbar input[type="radio"]:checked + label p span{
         background-color: #f1cf6b;
     }
-    .radio-btns {
+     .radio-btns {
         width: 50%;
         max-width: 215px;
         margin-right: 30px;
     }
-      .radio-btns p {
+ .radio-btns p {
         width: 25px;
         height: 25px;
         border: 1px solid #1f4c61;
@@ -131,7 +148,7 @@ body{
         padding: 5px;
         margin: 0px 0px 0px 20px !important;
     }
-    .radio-btns p span {
+   .radio-btns p span {
         display: table-cell;
         background-color: #1f4c61;
         border-radius: 50%;
@@ -150,7 +167,7 @@ body{
         text-align: center;
         display: table;
         padding: 5px;
-        margin: 0px 40px 0px 0px !important;
+        margin: 0px 10px 0px 0px !important;
     }
     .remember p span {
         display: table-cell;
@@ -160,32 +177,90 @@ body{
     }
     .remember {
         display: inline-flex;
-        font-size:18px;
+        font-size:14px;
         color: #1f4c61;
         font-family: "G-Book";
     }
+    /* Slider 2 */
+    #slider2 .desc, #slider3 .desc {
+        color: #f1cf6b;
+    }
+    #slider2 .title h2, #slider3 .title h2 {
+        color: #f1cf6b;
+    }
+    #slider2 .right-part hr, #slider3 .right-part hr {
+        background-color: #f1cf6b;
+    }
+    #slider2 .remember, #slider3 .remember {
+        color: #f1cf6b;
+    }
+    #slider2 .remember p, #slider3 .remember p {
+        border: 1px solid #f1cf6b;
+    }
+    #slider2 .remember p span, #slider3 .remember p span {
+        background-color: #f1cf6b;
+    }
+    #slider2 .radio-toolbar input[type="radio"]:checked + label, #slider3 .radio-toolbar input[type="radio"]:checked + label {
+        background-color: #f1cf6b;
+        border-color: #f1cf6b;
+        color: #1f4c61;
+    }
+    #slider2 .radio-toolbar input[type="radio"]:checked + label p, #slider3 .radio-toolbar input[type="radio"]:checked + label p  {
+        border-color: #1f4c61;
+        color: #1f4c61;
+    }
+    #slider2 .radio-toolbar input[type="radio"]:checked + label p span, #slider3 .radio-toolbar input[type="radio"]:checked + label p span {
+        background-color: #1f4c61;
+    }
+    #slider2 .radio-toolbar label, #slider3 .radio-toolbar label {
+        background-color: #1f4c61;
+        border: 1px solid #f1cf6b;
+        color: #f1cf6b;
+    }
+    #slider2 .radio-btns p, #slider3 .radio-btns p {
+        border: 1px solid #f1cf6b;
+    }
+    #slider2 .radio-btns p span , #slider3 .radio-btns p span{
+        background-color: #f1cf6b;
+    }
+    .slider-list {
+        position: relative;
+        width: 100% !important;
+    }
     
-   
-   
-
   }
   @media (min-width: 576px) {
    
   }
   
   @media (min-width: 768px) {
+    #header .navbar {
+        padding-top: 25px;
+    }
+    .title h2 {
+        font-size: 60px;
+    }
+    .desc {
+        font-size: 20px;
+    }
+    .right-part hr {
+        margin: 30px 0px;
+    }
+    .remember {
+        font-size:18px;
+    }
+    .remember p {
+        margin: 0px 40px 0px 0px !important;
+    }
     
   }
   
   @media (min-width: 992px) {
   
-   
-
   }
   
   @media (min-width: 1200px) {
     
-   
   }
   @media (min-width:1440px) {
     
@@ -196,4 +271,3 @@ body{
     }
     
   }
-
